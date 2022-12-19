@@ -66,7 +66,7 @@ Response fetch(const char* url, RequestOptions options) {
         options.method + " " + parsedUrl.path + parsedUrl.afterPath + " HTTP/1.1\r\n" +
         "Host: " + parsedUrl.host + "\r\n" +
         options.headers.text() +
-        options.body + "\r\n\r\n";
+        options.body;
 
     DEBUG_FETCH("-----REQUEST START-----\n%s\n-----REQUEST END-----", request.c_str());
 

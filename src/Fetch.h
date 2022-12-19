@@ -4,6 +4,7 @@
 #include "utils/Url/Url.h"
 #include "utils/Headers/Headers.h"
 #include <Arduino.h>
+#include "WiFiClientSecure.h"
 
 #ifndef FETCH_H_
 #define FETCH_H_
